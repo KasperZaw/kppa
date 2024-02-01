@@ -7,7 +7,6 @@ const Nav = () => {
     <nav>
       <div className="nav-items">
         <Toggle />
-        <span>+48 999 999 999</span>
       </div>
       <img src={logo} alt="logo" />
       <div className="dummy-div"></div>

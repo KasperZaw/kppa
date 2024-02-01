@@ -3,7 +3,6 @@ import "./footer.scss";
 import logo from "../../assets/images/logo-white.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   const [showMap, setShowMap] = useState(false);
@@ -25,10 +24,6 @@ const Footer = () => {
           <span>REGON 52756637000000</span>
         </div>
         <div className="right-info">
-          <span>
-            <FontAwesomeIcon icon={faPhone} style={{ marginRight: "8px" }} />
-            +48 999 888 777
-          </span>
           <span>
             <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: "8px" }} />
             contact@kppa.one
