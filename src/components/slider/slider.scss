@@ -1,0 +1,147 @@
+$gold: #b28a57;
+
+.circle-container {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  border-radius: 50%;
+  margin: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .column {
+    position: absolute;
+    width: 40px;
+    height: 150px;
+
+    transform-origin: bottom center;
+    cursor: pointer;
+  }
+
+  .circle {
+    height: 1000px;
+    position: absolute;
+    top: 0px;
+  }
+
+  .slider {
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+  }
+
+  @for $i from 1 through 6 {
+    .column:nth-child(#{$i}) {
+      $angle: 40deg / 4 * ($i - 5);
+      transform: rotate($angle) translateY(-273px);
+    }
+  }
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.highlighted-text {
+  color: $gold;
+}
+
+@media (max-width: 1400px) {
+  .circle-container {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    border-radius: 50%;
+    margin: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .column {
+      position: absolute;
+      width: 30px;
+      height: 40px;
+
+      transform-origin: bottom center;
+      cursor: pointer;
+    }
+
+    .circle {
+      height: 700px;
+      position: absolute;
+      top: 20px;
+      transform: rotate(-100deg);
+    }
+
+    .slider {
+      height: 550px;
+      width: 550px;
+      border-radius: 50%;
+      position: absolute;
+      top: 95px;
+    }
+
+    @for $i from 1 through 6 {
+      .column:nth-child(#{$i}) {
+        $angle: 40deg / 4 * ($i - 5);
+        transform: rotate($angle) translateY(-260px);
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .circle-container {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    border-radius: 50%;
+    margin: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .column {
+      position: absolute;
+      width: 30px;
+      height: 40px;
+
+      transform-origin: bottom center;
+      cursor: pointer;
+    }
+
+    .circle {
+      height: 500px;
+      position: absolute;
+      top: 20px;
+      transform: rotate(-100deg);
+    }
+
+    .slider {
+      height: 420px;
+      width: 420px;
+      border-radius: 50%;
+      position: absolute;
+      top: 60px;
+    }
+
+    @for $i from 1 through 6 {
+      .column:nth-child(#{$i}) {
+        $angle: 40deg / 4 * ($i - 5);
+        transform: rotate($angle) translateY(-268px);
+      }
+    }
+  }
+}
+@media (max-height: 750px) {
+  .circle-container {
+    display: none;
+  }
+}

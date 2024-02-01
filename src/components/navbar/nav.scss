@@ -1,0 +1,45 @@
+$gold: #B28A57;
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $gold;
+  padding: 20px 50px;
+
+  img {
+    height: 70px;
+    flex-shrink: 0;
+  }
+
+  span {
+    flex-shrink: 0;
+  }
+
+  .dummy-div {
+    flex: 1;
+  }
+
+  .nav-items {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 0px;
+  }
+  
+
+  .dummy-div {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1000px) {
+  nav {
+    padding: 20px 20px;
+    img {
+      display: none;
+    }
+  }
+}
